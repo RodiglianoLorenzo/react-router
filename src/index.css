@@ -38,7 +38,7 @@ body {
 }
 
 main {
-
+    background-color: #faf1e3;
 
     .Home_main {
         font-size: 20px;
@@ -76,6 +76,9 @@ main {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
     }
 
+    .card_color {
+        color: #fa6c1ad7;
+    }
 }
 
 footer {
