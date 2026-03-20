@@ -3,7 +3,7 @@ export default function ChiSiamo() {
     return (
         <div>
             <main>
-                <h1>products</h1>
+                <h1>Chi Siamo</h1>
             </main>
         </div>
     )
