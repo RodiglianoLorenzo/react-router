@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function AppFooter() {
 
     return (
-        <footer>
-            <div className="text-center text-light">
+        <footer className="py-4">
+            <div className="text-center text-light ">
                 <h1>Pronto a fare Shopping?</h1>
                 <p>Oltre 200 prodotti disponibili, aggiornati in tempo reale.</p>
 

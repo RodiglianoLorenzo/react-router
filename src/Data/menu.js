@@ -7,7 +7,7 @@ const menu = [
     {
         id: 2,
         path: '/ChiSiamo',
-        text: 'ChiSiamo'
+        text: 'Chi Siamo'
     },
     {
         id: 3,
