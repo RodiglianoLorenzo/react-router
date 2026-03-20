@@ -34,7 +34,6 @@ header {
         text-decoration: none;
         color: inherit;
         border-radius: 5px;
-
     }
 
 
@@ -53,5 +52,13 @@ header {
 }
 
 footer {
-    background-color: rgb(182, 151, 12);
+    background-color: #fa6c1ad7;
+
+    .nav-footer {
+        border: 1px solid black;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 5px;
+    }
 }
