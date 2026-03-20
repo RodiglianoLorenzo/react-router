@@ -2,7 +2,7 @@ const menu = [
     {
         id: 1,
         path: '/',
-        text: 'home'
+        text: 'Home'
     },
     {
         id: 2,

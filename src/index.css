@@ -1,1 +1,57 @@
 @import url('bootstrap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+
+    a {
+        padding: 0.5rem;
+        text-decoration: none;
+
+    }
+
+    .nav-link {
+        border: 1px solid black;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 5px;
+    }
+
+    .nav-midle {
+        border: 1px solid black;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 5px;
+
+    }
+
+
+    .nav-link:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-midle:hover {
+        background-color: #c8502a;
+    }
+
+    .Testo_title {
+        color: #c8502a;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+footer {
+    background-color: rgb(182, 151, 12);
+}
