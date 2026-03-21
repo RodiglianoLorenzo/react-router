@@ -7,7 +7,7 @@ export default function AppHeader() {
         <header className="d-flex flex-column">
 
             <div className="d-flex justify-content-between align-items-center">
-                <h2 className="mb-0">Emporio.</h2>
+                <h2 className="mb-0 header_title">Emporio.</h2>
                 <nav className="d-flex gap-3">
                     {menu.map(item => (
                         <NavLink

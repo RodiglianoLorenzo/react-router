@@ -36,7 +36,7 @@ export default function Prodotti() {
                                 <p className="small">⭐ {p.rating.rate}</p>
 
                                 <button className="btn btn-primary mt-auto">
-                                    Dettagli
+                                    Compra subito
                                 </button>
                             </div>
 
