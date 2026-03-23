@@ -17,19 +17,30 @@ export default function SingoliProdotti() {
             });
     }, [id]);
 
-    if (!prodotti) return <p>Caricamento...</p>;
+    if (!prodotti) return <p className="text-center mt-5">Caricamento...</p>;
 
     return (
-        <div className="container mt-4">
-            <h2>{prodotti.title}</h2>
-
-            <img src={prodotti.image} alt={prodotti.title} width="200" />
-
-            <p>{prodotti.description}</p>
-
-            <p className="fw-bold">{prodotti.price} $</p>
-
-            <p>⭐ {prodotti.rating.rate}</p>
+        <div className="container mt-5">
+            <div className="card shadow-sm">
+                <div className="row g-0">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img
+                            src={prodotti.image}
+                            alt={prodotti.title}
+                            className="img-fluid rounded"
+                        />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h3 className="card-title mb-3">{prodotti.title}</h3>
+                            <p className="card-text">{prodotti.description}</p>
+                            <p className="fw-bold h5">{prodotti.price} $</p>
+                            <p className="text-warning">⭐ {prodotti.rating.rate} / 5</p>
+                            <button className="btn btn-primary mt-3">Aquista Ora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
