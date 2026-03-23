@@ -18,6 +18,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/ChiSiamo' element={<ChiSiamo />} />
             <Route path='/Prodotti' element={<Prodotti />} />
+            <Route path='/Prodotti/:id' element={<SingoliProdotti />} />
           </Route>
         </Routes>
       </BrowserRouter>
