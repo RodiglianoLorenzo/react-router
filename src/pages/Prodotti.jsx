@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Link } from 'react-router-dom'
 
 const endpoint = "https://fakestoreapi.com/products";
 
@@ -19,29 +19,29 @@ export default function Prodotti() {
             <div className="row">
                 {prodotti.map(p => (
                     <div className="col-12 col-md-6 col-lg-4 col-xl-3 mb-4" key={p.id}>
+                        <Link to={`/prodotti/${p.id}`}>
+                            <div className="card h-100 shadow-sm">
 
-                        <div className="card h-100 shadow-sm">
+                                <img src={p.image} className="card-img-top p-3" alt={p.title} />
 
-                            <img src={p.image} className="card-img-top p-3" alt={p.title} />
+                                <div className="card-body d-flex flex-column">
+                                    <h6 className="card-title">{p.title}</h6>
 
-                            <div className="card-body d-flex flex-column">
-                                <h6 className="card-title">{p.title}</h6>
+                                    <p className="card-text small">
+                                        {p.description}
+                                    </p>
 
-                                <p className="card-text small">
-                                    {p.description.substring(0, 60)}...
-                                </p>
+                                    <p className="fw-bold">{p.price} €</p>
 
-                                <p className="fw-bold">{p.price} €</p>
+                                    <p className="small">⭐ {p.rating.rate}</p>
 
-                                <p className="small">⭐ {p.rating.rate}</p>
+                                    <button className="btn btn-primary mt-auto">
+                                        Compra subito
+                                    </button>
+                                </div>
 
-                                <button className="btn btn-primary mt-auto">
-                                    Compra subito
-                                </button>
                             </div>
-
-                        </div>
-
+                        </Link>
                     </div>
                 ))}
             </div>

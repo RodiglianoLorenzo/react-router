@@ -4,6 +4,7 @@ import './index.css'
 import ChiSiamo from './pages/ChiSiamo'
 import Prodotti from './pages/Prodotti'
 import DefaultLayout from './layouts/DefaultLayout'
+import SingoliProdotti from './pages/SingoliProdotti'
 
 
 function App() {
